@@ -15,4 +15,4 @@ let userOne = {
 let userTwo = userOne
 userTwo.email = "hitesh@google. com"
 console.log(userOne.email)
-console.log(userTwo.emaitv)
+console.log(userTwo.email)
