@@ -8,7 +8,7 @@ let accoutState;
 
 /*
 Preferred Not Use Var in your program
-Because of block scope
+Because of block scope and functional scope
 */
 
 // accoutId = 12 // Not Allowed
