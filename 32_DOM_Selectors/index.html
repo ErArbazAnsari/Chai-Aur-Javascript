@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Introduction</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #ffff;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div class="bg-black">
+        <h1 class="heading" id="title">DOM Learning<span style="display: none;">test content/data</span></h1>
+        <h1>This is my second heading</h1>
+        <h2>this is another heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto magni quis ipsam dignissimos
+            quae reprehenderit laudantium nam maiores veritatis! </p>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About Us</li>
+            <li>Galary</li>
+            <li>Updates</li>
+        </ul>
+    </div>
+    <script>
+        console.log(document.getElementById('title'))
+
+        console.log(document.getElementById('title').id)
+
+        console.log(document.getElementById('title').class)
+
+        console.log(document.getElementById('title').className)
+
+        console.log(document.getElementById('title').getAttribute)
+
+        <!-- console.log(document.getElementById('title').getAttribute()) // Occurs Error -->
+
+        console.log(document.getElementById('title').getAttribute('class'))
+
+        console.log(document.getElementById('title').getAttribute('id'))
+
+        document.getElementById('title').getAttribute('id', 'happy')
+
+        document.getElementById('title').style.backgroundColor = 'yellow'
+        document.getElementById('title').style.color = 'red'
+
+        title.style.padding = '25px'
+        title.style.border = '4px solid red'
+        title.style.borderRadius = '10px'
+
+        body.style.fontSize = '1.4rem'
+        body.style.fontFamily = 'Segoe UI'
+        title.style.cursor = 'pointer'
+
+        console.log(title)
+        console.log(body)
+
+        console.log("textContent:", title.textContent)
+        console.log("innerHTML is:", title.innerHTML)
+        console.log("innerText is:", title.innerText)
+
+        console.log(document.getElementsByClassName('heading'))
+
+
+        console.log(document.querySelector('h1'))
+        console.log(document.querySelectorAll('h1'))
+
+        console.log(document.querySelector('#title'))
+        console.log(document.querySelector('.heading'))
+
+        const myFirstUL = document.querySelector('ul')
+        const firstData = myFirstUL.querySelector('li')
+
+
+        firstData.style.backgroundColor = 'green'
+        firstData.style.color = 'yellow'
+        firstData.style.padding = '15px'
+        firstData.style.fontSize = '2rem'
+        firstData.style.border = '4px solid white'
+        firstData.style.borderRadius = '50px'
+
+
+
+
+    </script>
+</body>
+
+</html>
