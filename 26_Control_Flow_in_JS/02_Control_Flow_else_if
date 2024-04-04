@@ -1,0 +1,17 @@
+let balance = '1000';
+
+if (balance > 1000) {
+    console.log("Balance is greator than 1000")
+}
+
+else if (balance < 1000) {
+    console.log("Balance is less than 1000")
+}
+
+else if (balance === 1000) {
+    console.log("Balance is equal to 1000");
+}
+
+else {
+    console.log("NAN")
+}

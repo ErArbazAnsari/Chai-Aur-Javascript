@@ -52,6 +52,8 @@ else {
 // console.log(score)
 
 
-let score = 200;
-if (score > 400) console.log("Score is high")
+let score = 2010;
+if (score > 400) console.log("Score is high"), console.log("highest score now") // Implicit scope. Not Recommended
+
 else console.log("Less Score")
+
