@@ -11,6 +11,11 @@
             color: #ffff;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body id="body">
@@ -21,11 +26,11 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto magni quis ipsam dignissimos
             quae reprehenderit laudantium nam maiores veritatis! </p>
         <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>About Us</li>
-            <li>Galary</li>
-            <li>Updates</li>
+            <li class="listItem">Home</li>
+            <li class="listItem">Contact</li>
+            <li class="listItem">About Us</li>
+            <li class="listItem">Galary</li>
+            <li class="listItem">Updates</li>
         </ul>
     </div>
     <script>
@@ -85,7 +90,44 @@
         firstData.style.border = '4px solid white'
         firstData.style.borderRadius = '50px'
 
+        console.log(firstData.innerText)
+        console.log(firstData.innerText = 'This')
 
+        const myData = console.log(document.querySelectorAll('li'))
+        console.log(myData)
+
+        //myData[0].style.backgroundColor='yellow'
+        //myData[1].style.backgroundColor='yellow'
+
+
+        const myh1 = document.querySelectorAll('h1')
+
+        myh1.forEach((l) => {
+            l.style.backgroundColor = 'white'
+            l.style.color = 'black'
+        })
+
+        const myLiList = document.querySelectorAll('li')
+        myLiList.forEach((l) => {
+            l.style.color = 'red'
+            l.style.backgroundColor = 'yellow'
+            l.style.margin = '10px'
+            l.style.borderRadius = '20px'
+            l.style.padding = '10px'
+            l.style.fontWeight = '700'
+            l.style.fontSize = '1.8rem'
+            l.style.border = '4px solid red'
+        })
+
+        const myList = document.getElementsByClassName('listItem')
+        console.log(myList)
+
+        let myArray = Array.from(myList)
+        console.log(myArray)
+
+        myArray.forEach((l) => {
+            l.style.fontFamily = 'Teko'
+        })
 
 
     </script>
