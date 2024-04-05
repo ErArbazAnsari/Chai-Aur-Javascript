@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="language">
+        <li>Javascript</li>
+    </ul>
+    <h1>Arbaz Ansari</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, rem quidem! Labore magnam eum consequatur ducimus
+        consequuntur! Illo officiis aliquam nulla ratione officia laudantium repellendus, mollitia at? Officiis, quidem
+        eum.
+    </p>
+    <script>
+        let language = 'CPP'
+        function addLanguage(language) {
+            const li = document.createElement('li')
+            li.innerHTML = `${language}`
+            document.querySelector('#language').appendChild(li)
+        }
+        //addLanguage(language)
+
+        function addLanguageOpti(language) {
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(language));
+            document.querySelector('#language').appendChild(li)
+        }
+        addLanguageOpti("Cpp")
+        addLanguageOpti("Ruby")
+        addLanguageOpti("Python")
+
+
+        //Edit
+        const secondLang = document.querySelector('li:nth-child(2)')
+        //secondLang.innerHTML = 'Java Programming Language'
+        const newLI = document.createElement('li')
+        newLI.textContent = "Mojo"
+        secondLang.replaceWith(newLI)
+
+        // Another way to edit
+        const firstli = document.querySelector('li:first-child')
+        firstli.outerHTML = '<li>Typescript</li>'
+
+        // Removing li
+        const removing = document.querySelector('li:last-child')
+        removing.remove()
+
+        const removing1 = document.querySelector('li:last-child')
+        removing1.remove()
+    </script>
+</body>
+
+</html>
