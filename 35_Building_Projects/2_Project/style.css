@@ -1,0 +1,83 @@
+body {
+    background-color: #212121;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+
+}
+
+.container {
+    text-align: center;
+    margin-top: 8%;
+}
+
+#myHeader {
+    text-decoration: underline dotted yellow;
+    color: chartreuse;
+}
+
+#height {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    padding: 5px;
+    height: 20px;
+    width: 150px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+}
+
+#weight {
+    margin-left: 15px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 5px;
+    height: 20px;
+    cursor: pointer;
+    width: 150px;
+}
+
+#mySubmitButton {
+    padding: 10px 10px 25px 10px;
+    height: 40px;
+    width: 130px;
+    background-color: chartreuse;
+    border: 2px solid white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#mySubmitButton:active {
+    background-color: #212121;
+    color: chartreuse;
+    border: 2 px solid white;
+
+}
+
+.myDescription {
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 7%;
+}
+
+svg {
+    height: 50px;
+    width: 25px;
+    fill: white;
+    display: flex;
+    justify-content: baseline;
+    margin-left: 49%;
+    cursor: pointer;
+}
